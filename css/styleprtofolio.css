@@ -1,0 +1,319 @@
+.beforaside {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  padding: 40px;
+
+}
+
+.main {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+
+}
+
+aside {
+
+  width: 50%;
+}
+
+ul {
+
+  padding: 10px;
+}
+
+li {
+  padding: 10px;
+}
+
+li span,
+h6 span {
+  color: rgb(179, 112, 112);
+  font-size: 1.5rem;
+}
+
+
+h6 {
+  font-size: 1.5rem;
+}
+
+.formrowcontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px 15px;
+}
+
+
+form {
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 45px;
+}
+
+input::placeholder,
+input {
+  color: #cac6c6;
+  background-color: #f0f0f0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #a87272;
+  padding: 10px;
+}
+
+
+
+label {
+
+  color: #666;
+}
+
+.form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 10px;
+  margin: 10px 0;
+
+}
+
+.password-change {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+
+.color-bru {
+
+  background-color: #aa7676;
+}
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive design adjustments */
+section {
+  padding: 40px;
+}
+
+.main {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+aside {
+  width: 50%;
+}
+
+ul {
+  padding: 10px;
+}
+
+li {
+  padding: 10px;
+}
+
+li span,
+h6 span {
+  color: rgb(179, 112, 112);
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+.formrowcontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px 15px;
+}
+
+form {
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 45px;
+}
+
+input::placeholder,
+input {
+  color: #cac6c6;
+  background-color: #f0f0f0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #a87272;
+  padding: 10px;
+}
+
+label {
+  color: #666;
+}
+
+.form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.password-change {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.color-bru {
+  background-color: #aa7676;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .form-row {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .formrowcontainer {
+    flex-wrap: wrap;
+  }
+
+  .form-row {
+    width: 100%;
+  }
+  
+  h6 {
+    font-size: 1.2rem;
+  }
+  
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  h2, h6 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  button {
+    padding: 10px;
+  }
+  
+  .buttons {
+    flex-direction: column;
+  }
+}
